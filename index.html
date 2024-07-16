@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Junoon</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .banner::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, black, transparent 10%);
+        }
+        .banner::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, black, transparent 10%);
+        }
+    </style>
 </head>
 <body class="bg-black">
     <!-- Header -->
@@ -21,17 +35,19 @@
     
     <!-- Banner -->
     <section class="relative">
-        <img src="sample banner.jpeg" alt="Event Banner" class="w-full h-96 object-cover ">
-        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div class="banner">
+            <img src="sample banner.jpeg" alt="Event Banner" class="w-full h-[60vh] object-cover ">
+        </div>
+        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
 
             <h1 class="text-4xl text-white font-bold">The Zeal to Create</h1>
         </div>
     </section>
     
     <!-- About Us Section -->
-    <section class="p-8 text-white text-center">
-        <h2 class="text-2xl font-bold mb-4">About Us</h2>
-        <p class=" mb-4 max-w-[65ch] mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel mauris nec sapien venenatis dictum. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel mauris nec sapien venenatis dictum. Nulla facilisi.</p>
+    <section class="p-8 text-white text-center my-10">
+        <h2 class="text-3xl font-bold mb-8">About Us</h2>
+        <p class=" mb-4 max-w-[60vw] mx-auto text text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae nibh in sem egestas dignissim. Sed vulputate lacinia elit ut sodales. Aliquam suscipit est eget libero pulvinar, a ultrices dolor convallis. Nulla pretium porta lobortis. Curabitur rutrum mattis varius. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis iaculis ornare nulla, id ullamcorper libero varius quis.</p>
     </section>
 </body>
 </html>
