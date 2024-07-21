@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Junoon</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <style>
         .banner::before {
             content: '';
@@ -18,6 +21,14 @@
             inset: 0;
             background: linear-gradient(to top, black, transparent 10%);
         }
+        .text-glow {
+            text-shadow: 
+                0 0 60px rgba(255,255,255, 0.4),
+                0 0 60px rgba(255,255,255, 0.4),
+                0 0 60px rgba(255,255,255, 0.4),
+                0 0 60px rgba(255,255,255, 0.4),
+                0 0 60px rgba(255,255,255, 0.4);
+  }
     </style>
 </head>
 <body class="bg-black">
@@ -25,11 +36,9 @@
     <header class="text-white flex justify-between items-center m-10">
         <img src="Logo.png" alt="" class="w-36">
         <nav class="space-x-4">
-            <a href="#" class="hover:underline">Home</a>
-            <a href="#" class="hover:underline">Members & Faculty</a>
-            <a href="#" class="hover:underline">Upcoming Events</a>
-            <a href="#" class="hover:underline">Gallery</a>
-            <a href="#" class="hover:underline">Contact Us</a>
+            <a href="index.html" class="hover:underline">Home</a>
+            <a href="members.html" class="hover:underline">Members & Faculty</a>
+
         </nav>
     </header>
     
@@ -40,7 +49,7 @@
         </div>
         <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
 
-            <h1 class="text-4xl text-white font-bold">The Zeal to Create</h1>
+            <h1 class="text-7xl text-white font-bold text-glow font-[satisfy]">The Zeal to Create</h1>
         </div>
     </section>
     
